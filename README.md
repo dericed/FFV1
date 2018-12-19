@@ -14,6 +14,24 @@ Note that within ffv1.md lines that are prefixed with `SVGI:` refer to an embedd
 
 A Makefile is provided that can produce the HTML and text RFC outputs.
 
+The Makefile requires the following depedencies:
+- [mmark](https://github.com/mmarkdown/mmark) version 2.0.7 or higher
+- [xml2rfc](https://pypi.org/project/xml2rfc/) version 2.5.1 or higher
+- [xmlstarlet](http://xmlstar.sourceforge.net/) 1.6.1 or higher
+- [pdfcrop](http://pdfcrop.sourceforge.net/) v1.38 or higher
+- [pdf2svg](https://github.com/dawbarton/pdf2svg) 0.2.3 or higher
+
+### Installing Dependencies
+
+#### Via Homebrew on Mac
+
+```
+brew install mmark pdf2svg xmlstarlet
+brew cask install mactex
+easy_install pip
+pip install xml2rfc
+```
+
 ## Version Handling
 
 The ffv1.md file is currently intended to be used to produce documentation for both FFV1 versions 0, 1, and 3 as well as FFV1 version 4. Lines containing `{V4}` will be suppressed from the version 0,1,3 outputs while lines containing `{V3}` will be suppressed from the version 4 outputs.
