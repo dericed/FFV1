@@ -32,4 +32,4 @@ draft-ietf-cellar-ffv1-v4-$(VERSION-v4).txt: ffv1.md
 draft-ietf-cellar-ffv1-$(VERSION).txt: ffv1.md
 
 clean:
-	rm -f draft-ietf-cellar-ffv1-* merged_*
+	rm -f draft-ietf-cellar-ffv1-* merged_* *.svg
